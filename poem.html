@@ -1,0 +1,90 @@
+<html>
+<body style = "background-color: #ffb3b3;">
+	<head>
+		<script>
+		var type;
+		var word;
+		var wordlist = ["apple", "flowers", "never"];
+		var typelist = ["haiku", "sonnet", "limerick"];
+
+
+		function poemType(){
+		    var random = Math.floor(Math.random() * 3);
+		  var type = typelist[random];
+		  alert("Make a " + type + " poem :)");
+		}
+
+		function wordType(){
+		  var ran = Math.floor(Math.random() * 3);
+		  var word= wordlist[ran];
+		alert("Use the word "+ "''" + word + "''" + " in your poem :)");
+		}
+		</script>
+
+		<style>
+		.button {
+    background-color:#ff4d4d;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+		}
+		.div1{
+			width:300px;	}
+			body {
+    font-family: "Comic Sans MS", Times, serif;
+}
+			</style>
+
+
+	</head>
+	<body>
+
+		<h1><center>Build a Poem!</center></h1>
+<center>Click the buttons to either get a random word or a random type of poem</center>
+<center>Then make up your own poem using the results!</center>
+<center>Have Fun!</center>
+		<center>
+			<button onclick="wordType()"class="button">WORD</button>
+		<button onclick="poemType()"class="button"> POEM TYPE</button>
+		</center>
+		<center>
+			<input type="text" value="Your Poem"><br>
+		</center>
+			<div class="row">
+  <div class="column">
+    <img src="flowers.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="nature.jfif" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="sunset.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+	</body>
+
+</html>
